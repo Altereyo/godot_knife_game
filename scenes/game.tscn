@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bsrd5n1on76fq"]
+[gd_scene load_steps=4 format=3 uid="uid://bsrd5n1on76fq"]
 
 [ext_resource type="PackedScene" uid="uid://ce3n3lxhti0wf" path="res://entities/knife_shooter/knife_shooter.tscn" id="1_1oq5s"]
 [ext_resource type="PackedScene" uid="uid://df8c8t6clehfa" path="res://entities/target/target.tscn" id="2_j7l5s"]
+[ext_resource type="PackedScene" uid="uid://bb3ir763q3gen" path="res://entities/apple/apple.tscn" id="3_fugpr"]
 
 [node name="Game" type="Node2D"]
 
@@ -12,3 +13,6 @@ position = Vector2(0, 400)
 position = Vector2(0, -150)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Apple" parent="." instance=ExtResource("3_fugpr")]
+position = Vector2(0, 4)

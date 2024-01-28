@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://jlcmewwminbc"]
+
+[ext_resource type="Texture2D" uid="uid://dae7atrhylshy" path="res://icon.svg" id="1_eo6sm"]
+[ext_resource type="Script" path="res://scenes/test_pivot_rotation/Icon2.gd" id="2_tmtov"]
+
+[node name="TestPivotRotation" type="Node2D"]
+
+[node name="Icons" type="Node2D" parent="."]
+position = Vector2(339, 430)
+
+[node name="Icon" type="Sprite2D" parent="Icons"]
+texture = ExtResource("1_eo6sm")
+
+[node name="Icon2" type="Sprite2D" parent="Icons"]
+texture = ExtResource("1_eo6sm")
+offset = Vector2(300, 0)
+script = ExtResource("2_tmtov")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://df8c8t6clehfa"]
+[gd_scene load_steps=5 format=3 uid="uid://df8c8t6clehfa"]
 
 [ext_resource type="Script" path="res://entities/target/target.gd" id="1_7twmd"]
 [ext_resource type="Texture2D" uid="uid://cy61tdinvfpay" path="res://assets/target1.png" id="1_mvvuk"]
+[ext_resource type="PackedScene" uid="uid://bb3ir763q3gen" path="res://entities/apple/apple.tscn" id="3_mvqlj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i1x38"]
 radius = 132.061
@@ -19,3 +20,6 @@ shape = SubResource("CircleShape2D_i1x38")
 
 [node name="ItemsContainer" type="Node2D" parent="."]
 show_behind_parent = true
+
+[node name="Apple" parent="." instance=ExtResource("3_mvqlj")]
+position = Vector2(0, 177)
